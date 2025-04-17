@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px 5%;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        margin-inline: 5%;
+    }
+}

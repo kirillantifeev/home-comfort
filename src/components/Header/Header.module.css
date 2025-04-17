@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.shopBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.basket {
+    margin-inline-end: 15px;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+.basket:hover,
+.basketActive {
+   color: #d89797;
+   transform: scale(1.2);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color:#000000;
+}
+
+.logo {
+    background: url(../../img/bg.jpeg) no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #9a9797;
+    margin: 50px 0;
+    position: relative;
+}
+
+.logo::after {
+    content: 'Лучшие товары для вашего дома';
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 3px 3px 8px #757474;
+}
+
+.logo::before {
+    content: 'по низким ценам';
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    width: 300px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 3px 3px 3px #757474;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    column-gap: 25px;
+}
+
+.navLi {  
+    cursor: pointer;
+    transition: opacity 500ms ease;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navActive {
+    color: rgb(134, 106, 106);
+    text-decoration: none;
+    cursor: auto;
+}
+
+.navLi:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 1400px) {
+    .container {
+        margin-inline: 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-block-start: 0px;
+    }
+
+    .title {
+        margin-block-end: 20px;
+    }
+}

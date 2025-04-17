@@ -1,0 +1,57 @@
+.container {
+    list-style-type: none;
+    margin: 20px;
+    padding-block-start: 30px;
+    
+}
+
+.element {
+    margin-block-end: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-inline: 50px;
+}
+
+.question {
+    width: 100%;
+    position: relative;
+    background-color: #f4f2f2;
+    border-radius: 10px;
+    padding: 20px 60px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+}
+
+.collapse {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.collapseOpen {
+    height:auto;
+}
+
+.answer {
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.arrow {
+    position:absolute;
+    width: 100px;
+    height: 25px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    fill:rgb(82, 81, 81)
+}
+
+.arrowOpen {
+    transform: translateY(-50%) rotate(180deg);
+}
